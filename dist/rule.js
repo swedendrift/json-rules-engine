@@ -186,7 +186,7 @@ var Rule = function (_EventEmitter) {
   }, {
     key: 'evaluate',
     value: function () {
-      var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee6(almanac) {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(almanac) {
         var _this3 = this;
 
         var ruleResult, evaluateCondition, evaluateConditions, prioritizeAndRun, any, all, processResult, result, _result;
@@ -204,7 +204,7 @@ var Rule = function (_EventEmitter) {
                  */
 
                 evaluateCondition = function () {
-                  var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee(condition) {
+                  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(condition) {
                     var comparisonValue, passes, subConditions, evaluationResult;
                     return regeneratorRuntime.wrap(function _callee$(_context) {
                       while (1) {
@@ -301,7 +301,7 @@ var Rule = function (_EventEmitter) {
 
 
                 evaluateConditions = function () {
-                  var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(conditions, method) {
+                  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(conditions, method) {
                     var conditionResults;
                     return regeneratorRuntime.wrap(function _callee2$(_context2) {
                       while (1) {
@@ -347,7 +347,7 @@ var Rule = function (_EventEmitter) {
 
 
                 prioritizeAndRun = function () {
-                  var _ref4 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(conditions, operator) {
+                  var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(conditions, operator) {
                     var method, orderedSets, cursor;
                     return regeneratorRuntime.wrap(function _callee3$(_context3) {
                       while (1) {
@@ -412,7 +412,7 @@ var Rule = function (_EventEmitter) {
 
 
                 any = function () {
-                  var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee4(conditions) {
+                  var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(conditions) {
                     return regeneratorRuntime.wrap(function _callee4$(_context4) {
                       while (1) {
                         switch (_context4.prev = _context4.next) {
@@ -440,7 +440,7 @@ var Rule = function (_EventEmitter) {
 
 
                 all = function () {
-                  var _ref6 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(conditions) {
+                  var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5(conditions) {
                     return regeneratorRuntime.wrap(function _callee5$(_context5) {
                       while (1) {
                         switch (_context5.prev = _context5.next) {

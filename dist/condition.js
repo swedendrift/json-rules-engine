@@ -89,7 +89,7 @@ var Condition = function () {
   }, {
     key: '_getValue',
     value: function () {
-      var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(almanac) {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(almanac) {
         var value;
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
@@ -139,7 +139,7 @@ var Condition = function () {
   }, {
     key: 'evaluate',
     value: function () {
-      var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(almanac, operatorMap) {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(almanac, operatorMap) {
         var op, rightHandSideValue, leftHandSideValue, result;
         return regeneratorRuntime.wrap(function _callee2$(_context2) {
           while (1) {

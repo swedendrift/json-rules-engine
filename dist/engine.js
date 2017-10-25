@@ -210,7 +210,7 @@ var Engine = function (_EventEmitter) {
   }, {
     key: 'evaluateRules',
     value: function () {
-      var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ruleArray, almanac) {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(ruleArray, almanac) {
         var _this2 = this;
 
         return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -259,7 +259,7 @@ var Engine = function (_EventEmitter) {
   }, {
     key: 'run',
     value: function () {
-      var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
         var _this3 = this;
 
         var runtimeFacts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};

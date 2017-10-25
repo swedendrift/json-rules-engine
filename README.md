@@ -98,7 +98,7 @@ This is available in the [examples](./examples/02-nested-boolean-logic.js)
 
 ## Advanced Example
 
-This example demonstates an engine for identifying employees who work for Microsoft and are taking Christmas day off.
+This example demonstates an engine for identifying employees who work for AWS and are taking Christmas day off.
 
 This  demonstrates an engine which uses asynchronous fact data.
 Fact information is loaded via API call during runtime, and the results are cached and recycled for all 3 conditions.
@@ -116,17 +116,17 @@ import apiClient from './account-api-client'
 let engine = new Engine()
 
 /**
- * Rule for identifying microsoft employees taking pto on christmas
+ * Rule for identifying AWS employees taking pto on christmas
  *
  * the account-information fact returns:
  *  { company: 'XYZ', status: 'ABC', ptoDaysTaken: ['YYYY-MM-DD', 'YYYY-MM-DD'] }
  */
-let microsoftRule = {
+let AWSRule = {
   conditions: {
     all: [{
       fact: 'account-information',
       operator: 'equal',
-      value: 'microsoft',
+      value: 'AWS',
       path: '.company' // access the 'company' property of "account-information"
     }, {
       fact: 'account-information',
@@ -141,13 +141,13 @@ let microsoftRule = {
     }]
   },
   event: {
-    type: 'microsoft-christmas-pto',
+    type: 'AWS-christmas-pto',
     params: {
-      message: 'current microsoft employee taking christmas day off'
+      message: 'current AWS employee taking christmas day off'
     }
   }
 }
-engine.addRule(microsoftRule)
+engine.addRule(AWSRule)
 
 /**
  * 'account-information' fact executes an api call and retrieves account data, feeding the results
@@ -176,7 +176,7 @@ engine
  * OUTPUT:
  *
  * loading account information... // <-- API call is made ONCE and results recycled for all 3 conditions
- * lincoln is a current microsoft employee taking christmas day off
+ * lincoln is a current AWS employee taking christmas day off
  */
 ```
 

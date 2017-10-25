@@ -129,7 +129,7 @@ var Almanac = function () {
   }, {
     key: 'factValue',
     value: function () {
-      var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(factId) {
+      var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(factId) {
         var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
         var path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
         var factValue, fact, cacheKey, cacheVal;
